@@ -1,53 +1,49 @@
-\documentclass{article}
+\input opmac
 
-\usepackage[czech]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[doublespacing]{setspace}
-\usepackage[margin=3cm]{geometry}
+\parskip=0.7em
+\parindent=0pt
+\footline={\hfill}
 
-\setlength\parindent{0pt}
+\def\handwrite{\quad\hbox to .5\hsize{\dotfill\null}}
 
-\newcommand\HandwrittenText[1]{%
-  \parbox[t]{#1}{%
-    \centering
-    \dotfill\par
-    \nointerlineskip\vspace{2pt}
-  }%
+\tit Plná moc
+
+Já, níže podepsaný(á)
+
+{
+  \parskip = 2em
+  jméno a příjmení:\handwrite 
+
+  rodné číslo:\handwrite
+
+  trvalé bydliště:\handwrite
+  \vskip2em
+
+  \centerline{\bf uděluji plnou moc}
+
+  jméno a příjmení:\handwrite
+
+  rodné číslo:\handwrite
+
+  trvalé bydliště:\handwrite
 }
+\vskip2em
+k~tomu, aby mne zastupoval ve všech věcech a při jednání s~úřady, orgány státní správy a orgány místní samosprávy, právnickými a fyzickými osobami, vůči úřadům, státním orgánům a orgánům místní samosprávy, právnickým i fyzickým osobám, zejména:
 
-\begin{document}
-\pagenumbering{gobble}
+\begitems
+* činil mým jménem veškeré úkony, včetně úkonů písemných,
+* podával návrhy a žádosti,
+* přijímal veškeré doručované písemnosti,
+* podával řádné i mimořádné opravné prostředky při správních, soudních, či jiných řízeních a vzdával se jich,
+* přijímal plnění nároků, jejich přijetí potvrzoval a případně neplněné nároky vymáhal,
+* uznával uplatněné nároky, případně se nároků vzdával a uzavíral smíry.
+\enditems
 
-\section*{\centering Plná moc}
-Já níže podepsaný \par
-jméno a přijmení:\HandwrittenText{5cm}{} \par
- rodné číslo:\HandwrittenText{6cm}{} \par
- trvalé bydliště:\HandwrittenText{5.43cm}{} \par
- \HandwrittenText{7.75cm}{} \par
-\begin{center}
-  \textbf{uděluji plnou moc}
-\end{center}
- jméno a přijmení:\HandwrittenText{5cm}{} \par
- rodné číslo:\HandwrittenText{6cm}{} \par
- trvalé bydliště:\HandwrittenText{5.43cm}{} \par
- \HandwrittenText{7.75cm}{} \par
- \vskip 0.5cm
-k~tomu, aby mne zastupoval ve~všech věcech a~při jednání s~úřady, orgány státní správy a~orgány místní samosprávy, právnickými a~fyzickými osobami, vůči úřadům, státním orgánům a~orgánům místní samosprávy, právnickým i~fyzickým osobám, zejména:
+\vskip2em
+Tato plná moc se uděluje\handwrite.
+\vskip5em
 
-\begin{itemize}
-    \setlength\itemsep{-0.15cm}
-  \item činil mým jménem veškeré úkony, včetně úkonů písemných,
-  \item podával návrhy a žádosti,
-  \item přijímal veškeré doručované písemnosti,
-  \item podával řádné i mimořádné opravné prostředky při správních, soudních, či jiných řízeních a vzdával se jich,
-  \item přijímal plnění nároků, jejich přijetí potvrzoval a případně neplněné nároky vymáhal,
-  \item uznával uplatněné nároky, případně se nároků vzdával a uzavíral smíry
-    \vskip 2cm
-\end{itemize}
+V\dotfill dne\handwrite.
 
-Tato plná moc se uděluje \HandwrittenText{5cm}
-\vskip 2cm
-V \HandwrittenText{3cm} dne \HandwrittenText{3cm} \\
-\HandwrittenText{7.2cm}
+\bye
 
-\end{document}

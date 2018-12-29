@@ -1,10 +1,10 @@
-TEX=pdflatex
-VIEWER=qpdfview
+TEX = pdfcsplain
 
 all: plna-moc.tex
-	$(TEX) plna-moc.tex
-	$(TEX) plna-moc.tex
-	$(TEX) plna-moc.tex
+	$(TEX) $<
 
-view: plna-moc.pdf
-	$(VIEWER) plna-moc.pdf
+.PHONY: clean
+
+clean:
+	rm *.log
+
